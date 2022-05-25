@@ -8,9 +8,6 @@ import requests
 import json
 import pandas as pd
 
-a = list(map(hex, range(pow(2,8) - 1)))
-b = [elem[0:2]+"0"+elem[2:] for elem in a][0:8]
-bjson = json.dumps(b)
 
 start = 0x000
 end = 0xFFF
